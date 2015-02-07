@@ -28,7 +28,7 @@ result = Esperanto.transform <<JS
 JS
 
 result['code']
-//=> "define(function () {\n\n  'use strict';\n\n  return function() {\n      return 'hi, from esperanto.';\n    };\n\n});"
+#=> "define(function () {\n\n  'use strict';\n\n  return function() {\n      return 'hi, from esperanto.';\n    };\n\n});"
 ```
 
 ## Contributing
