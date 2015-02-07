@@ -9,15 +9,15 @@ module Esperanto
       @context ||= ExecJS::Runtimes::Node.compile(Source.bundled_paths.map {|path| File.read(path) }.join(';'))
     end
 
-    def toAmd(code, options = {})
+    def to_amd(code, options = {})
       context.call('esperanto.toAmd', code, options)
     end
 
-    def toCjs(code, options = {})
+    def to_cjs(code, options = {})
       context.call('esperanto.toCjs', code, options)
     end
 
-    def toUmd(code, options = {})
+    def to_umd(code, options = {})
       context.call('esperanto.toUmd', code, options)
     end
 
