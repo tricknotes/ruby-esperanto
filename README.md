@@ -21,7 +21,7 @@ Or install it yourself as:
 ## Usage
 
 ``` ruby
-result = Esperanto.transform <<JS
+result = Esperanto.to_amd <<JS
   export default function() {
     return 'hi, from esperanto.';
   }
