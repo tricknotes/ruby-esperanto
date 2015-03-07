@@ -6,7 +6,7 @@ require 'execjs'
 module Esperanto
   class << self
     def context
-      @context ||= ExecJS::Runtimes::Node.compile(Source.bundled_paths.map {|path| File.read(path) }.join(';'))
+      @context ||= ExecJS.compile(Source.bundled_source)
     end
 
     def to_amd(code, options = {})
