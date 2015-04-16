@@ -43,12 +43,12 @@ export default 'hi';
 
     expected = <<-JS.strip
 (function (global, factory) {
-\t\ttypeof exports === 'object' && typeof module !== 'undefined' ? module.exports = factory() :
-\t\ttypeof define === 'function' && define.amd ? define(factory) :
-\t\tglobal.homura = factory()
-\t}(this, function () { 'use strict';
+\ttypeof exports === 'object' && typeof module !== 'undefined' ? module.exports = factory() :
+\ttypeof define === 'function' && define.amd ? define(factory) :
+\tglobal.homura = factory()
+}(this, function () { 'use strict';
 
-\t
+
 \treturn 'hi';
 
 }));
